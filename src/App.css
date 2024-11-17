@@ -4,17 +4,6 @@
   min-height: 100%;
 }
 
-.header {
-  background-color: #fdb913;
-  padding: 1rem;
-}
-
-.logo {
-  font-family: monospace;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
 .main {
   flex: 1;
   display: flex;
@@ -38,7 +27,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-input {
+.input {
   width: 100%;
   max-width: 300px;
   padding: 0.5rem;

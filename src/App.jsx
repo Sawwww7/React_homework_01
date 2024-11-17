@@ -1,12 +1,14 @@
-import Header from "./components/Header";
-import Form from "./components/Form";
+import Header from "./components/header/Header";
+//import Form from "./components/Form";
+import Menu from "./components/menu/Menu";
+import pizzas from "../src/data/data";
 import "./App.css";
 
 function App() {
   return (
     <div className="container">
       <Header />
-      <Form />
+      <Menu pizzas={pizzas} />
     </div>
   );
 }
