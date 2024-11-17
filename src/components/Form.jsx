@@ -8,8 +8,13 @@ const Form = () => {
       <p className="welcome">
         👉 Welcome! Please start by telling us your name:
       </p>
-      <Input />
-      <Button />
+      <Input
+        type={"text"}
+        className={"input"}
+        placeholder={"Your full name"}
+        aria_label={"Your full name"}
+      />
+      <Button className={"btn"}>Start Order</Button>
     </div>
   );
 };

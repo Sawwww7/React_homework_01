@@ -1,10 +1,10 @@
-const Input = () => {
+const Input = ({ type, className, placeholder, aria_label }) => {
   return (
     <input
-      className="input"
-      type="text"
-      placeholder="Your full name"
-      aria-label="Your full name"
+      className={className}
+      type={type}
+      placeholder={placeholder}
+      aria-label={aria_label}
     />
   );
 };
