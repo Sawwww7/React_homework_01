@@ -1,3 +1,4 @@
+import "./input.css";
 const Input = ({ type, className, placeholder, aria_label }) => {
   return (
     <input

@@ -47,16 +47,6 @@
   font-size: 1.1rem;
 }
 
-.add-to-cart {
-  background-color: #fdb913;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 .sold-out {
   color: #999;
   font-weight: bold;

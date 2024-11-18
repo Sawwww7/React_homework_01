@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../buttom/Button";
 const MenuItem = ({ pizza }) => {
   const { id, name, unitPrice, imageUrl, ingredients, soldOut } = pizza;
   return (
