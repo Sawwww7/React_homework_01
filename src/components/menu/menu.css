@@ -31,9 +31,7 @@
   font-style: italic;
   margin-bottom: 0.5rem;
   list-style-type: none;
-
   grid-auto-flow: column;
-
   justify-content: start;
   padding-inline-start: 0px;
 }
@@ -50,8 +48,4 @@
 .sold-out {
   color: #999;
   font-weight: bold;
-}
-
-.add-to-cart:hover {
-  background-color: #e5a700;
 }

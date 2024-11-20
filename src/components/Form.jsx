@@ -1,5 +1,5 @@
-import Input from "./input/Input";
-import Button from "./buttom/Button";
+import Input from "./Input/Input";
+import Button from "./Buttom/Button";
 const Form = () => {
   return (
     <div className="main">

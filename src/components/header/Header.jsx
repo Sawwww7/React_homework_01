@@ -1,5 +1,5 @@
 import "./header.css";
-import Input from "../input/Input";
+import Input from "../Input/Input";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
 //import Form from "./components/Form";
-import Menu from "./components/menu/Menu";
+import Menu from "./components/Menu/Menu";
 import pizzas from "./data/data";
 import "./App.css";
 

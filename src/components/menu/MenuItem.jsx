@@ -1,6 +1,13 @@
-import Button from "../buttom/Button";
+import { useState } from "react";
+import Button from "../Buttom/Button";
+import Counter from "../Counter/Counter";
+
 const MenuItem = ({ pizza }) => {
   const { id, name, unitPrice, imageUrl, ingredients, soldOut } = pizza;
+  const [count, setCount] = useState(0);
+  const handleClickButton = () => {
+    setCount(1);
+  };
   return (
     <div className="pizza-item">
       <img src={imageUrl} alt={`${name} Pizza`} className="pizza-image" />
@@ -19,12 +26,20 @@ const MenuItem = ({ pizza }) => {
             </li>
           </ul>
         )}
-        <p className="price">€{unitPrice}.00</p>
+        {!soldOut ? <p className="price">€{unitPrice}.00</p> : <div></div>}
       </div>
       {soldOut ? (
         <p className="sold-out">SOLD OUT</p>
       ) : (
-        <Button className={"add-to-cart"}>ADD TO CART</Button>
+        <>
+          {count <= 0 ? (
+            <Button className={"add-to-cart"} onClick={handleClickButton}>
+              ADD TO CART
+            </Button>
+          ) : (
+            <Counter count={count} setCount={setCount} />
+          )}
+        </>
       )}
     </div>
   );
